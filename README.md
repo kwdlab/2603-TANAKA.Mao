@@ -29,7 +29,7 @@ git clone https://github.com/kwdlab/2603-TANAKA.Mao.git
 # Author
 Mao Tanaka
 
-References
+# References
 - MQTT Version 5.0 Specification
 https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html
 - Eclipse Mosquitto
