@@ -1,13 +1,18 @@
 # 2603-TANAKA.Mao
 2026年3月卒業  田中真央
 # Overview
-This repository contains experimental code and scripts used to evaluate the impact of massive concurrent connections on the Eclipse Mosquitto MQTT broker, focusing on concurrent-connection-based DoS attacks.
+This project investigates the impact of massive concurrent client connections on the Eclipse Mosquitto MQTT broker.
+In particular, it focuses on connection-oriented Denial-of-Service (DoS) attacks, where a large number of clients establish connections without actively transmitting messages.
+The goal of this study is to clarify how such attacks affect broker memory consumption and runtime behavior, and to identify practical limitations in terms of simultaneous connections.
+
 
 # Description
-This study investigates how an increasing number of simultaneous publisher connections affects Mosquitto’s memory usage and stability.  
-Even without significant message transmission, a large number of concurrent connections may exhaust broker-side or OS-level resources and lead to service disruption.
+This study evaluates how increasing the number of simultaneous publisher connections affects broker memory usage and runtime behavior.
+Even when little to no message transmission occurs, a large number of concurrent connections can exhaust connection management and OS resources, potentially leading to a denial-of-service condition.
 
-Memory usage is measured using `/proc/[pid]/smap
+Memory usage is measured using `/proc/[pid]/smaps`, and broker behavior is observed while gradually increasing the number of connections.
+
+
 
 # Requirements
 - OS: Linux
