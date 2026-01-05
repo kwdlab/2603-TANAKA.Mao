@@ -25,5 +25,5 @@ git clone https://github.com/kwdlab/2603-TANAKA.Mao.git
 Mao Tanaka
 
 # License
-Eclipse Public License 2.0
-Eclipse Distribution License 1.0
+- Eclipse Public License 2.0
+- Eclipse Distribution License 1.0
