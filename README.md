@@ -17,7 +17,7 @@ Memory usage is measured using `/proc/[pid]/smap
 
 # Install / Usage
 ```bash
-git clone <this-repository>
+git clone https://github.com/kwdlab/2603-TANAKA.Mao.git
 ```
 
 
