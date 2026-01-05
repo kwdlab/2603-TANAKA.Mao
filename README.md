@@ -24,6 +24,16 @@ git clone https://github.com/kwdlab/2603-TANAKA.Mao.git
 # Author
 Mao Tanaka
 
+References
+- MQTT Version 5.0 Specification
+https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html
+- Eclipse Mosquitto
+https://github.com/eclipse-mosquitto/mosquitto
+- procfs smaps documentation
+https://man7.org/linux/man-pages/man5/proc_pid_smaps.5.html
+- RFC 9431
+https://www.rfc-editor.org/rfc/rfc9431.html
+
 # License
 - Eclipse Public License 2.0
 - Eclipse Distribution License 1.0
