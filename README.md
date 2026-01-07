@@ -24,6 +24,7 @@ Memory usage is measured using `/proc/[pid]/smaps`, and broker behavior is obser
 ```bash
 git clone https://github.com/kwdlab/2603-TANAKA.Mao.git
 ```
+When building the mosquitto mentioned in the References section, you must replace any files with the same name as the above file with it and compile.
 
 
 # Author
