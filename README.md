@@ -25,7 +25,9 @@ Memory statistics are collected using `/proc/[pid]/smaps`, enabling detailed obs
 ```bash
 git clone https://github.com/kwdlab/2603-TANAKA.Mao.git
 ```
-When building the mosquitto mentioned in the References section, you must replace any files with the same name as the above file with it and compile.
+To build Eclipse Mosquitto listed in the References section, first clone the official Mosquitto repository.
+Next, download this repository and replace the corresponding source files in the Mosquitto source tree with the files provided here if files with the same names already exist.
+After replacing the files, compile Mosquitto using the standard build commands.
 
 
 # Author
