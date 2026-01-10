@@ -1,18 +1,19 @@
 # 2603-TANAKA.Mao
 2026年3月卒業  田中真央
 # Overview
-This project investigates the impact of massive concurrent client connections on the Eclipse Mosquitto MQTT broker.
-In particular, it focuses on connection-oriented Denial-of-Service (DoS) attacks, where a large number of clients establish connections without actively transmitting messages.
-The goal of this study is to clarify how such attacks affect broker memory consumption and runtime behavior, and to identify practical limitations in terms of simultaneous connections.
+This project investigates the memory consumption characteristics of the Eclipse Mosquitto MQTT broker under a large number of concurrent client connections.
+Rather than generating malformed traffic or high message rates, this study focuses on scenarios in which many legitimate MQTT clients establish and maintain connections simultaneously.
+
+The objective of this work is to clarify how the number of concurrent connections affects broker memory usage and to estimate the scalability limits of Mosquitto in terms of connection management, which is an important consideration for large-scale IoT systems.
+
 
 
 # Description
-This study evaluates how increasing the number of simultaneous publisher connections affects broker memory usage and runtime behavior.
-Even when little to no message transmission occurs, a large number of concurrent connections can exhaust connection management and OS resources, potentially leading to a denial-of-service condition.
+In this study, multiple MQTT publisher clients are launched concurrently to increase the number of simultaneous connections to a single Eclipse Mosquitto broker.
+Each client establishes a connection, sends a minimal message once, and then keeps the connection open without further message transmission. This allows the evaluation to focus on the memory overhead associated with connection management rather than message processing.
 
-Memory usage is measured using `/proc/[pid]/smaps`, and broker behavior is observed while gradually increasing the number of connections.
-
-
+Broker memory usage is measured by comparing the resident set size (RSS) at broker startup with the RSS observed immediately after all client connections are established.
+Memory statistics are collected using `/proc/[pid]/smaps`, enabling detailed observation of the broker’s memory consumption behavior as the number of concurrent connections increases.
 
 # Requirements
 - OS: Linux
