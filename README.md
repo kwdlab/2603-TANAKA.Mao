@@ -1,5 +1,5 @@
 # 2603-TANAKA.Mao
-2026年3月卒業  田中真央
+
 # Overview
 This project investigates the memory consumption characteristics of the Eclipse Mosquitto MQTT broker under a large number of concurrent client connections.
 Rather than generating malformed traffic or high message rates, this study focuses on scenarios in which many legitimate MQTT clients establish and maintain connections simultaneously.
